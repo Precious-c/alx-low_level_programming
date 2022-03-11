@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main()
 
 {
 	printf("Programing is like building a multilingual puzzle");
