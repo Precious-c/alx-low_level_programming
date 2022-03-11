@@ -1,4 +1,9 @@
-#include <stdio.h>
+/*
+* * Description: using the main function
+* * this program prints "Programming is like building a multilingual puzzle
+* * Return: 0
+*/
+include <stdio.h>
 
 int main(void)
 
