@@ -1,39 +1,20 @@
-#include <stdio.h>                                                                                                                      
+#include <stdio.h>
+/**
+ * main - main block
+ * Description: Print all numbers of base 10, starting from 0.
+ * You are not allowed to use any variable of type char.
+ * You can only use `putchar` to print to console.
+ * You can only use `putchar` twice.
+ * Return: 0
+ */
+int main(void)
+{
+	int i;
 
-/**                                                                                                                                     
- *
- *  * main - main block                                                                                                                    
- *
- *   * Description: prints all single digit numbers of base 10                                                                              
- *
- *    * starting from 0, followed by a new line.                                                                                             
- *
- *     * Return: 0                                                                                                                            
- *
- *      */                                                                                                                                     
-
-int main(void)                                                                                                                          
-
-{                                                                                                                                       
-
-	        int c = 0;                                                                                                                      
-
-		                                                                                                                                        
-
-		        while (c < 10)                                                                                                                  
-
-				        {                                                                                                                               
-
-						                putchar(48 + c);                                                                                                        
-
-								                c++;                                                                                                                    
-
-										        }                                                                                                                               
-
-			                                                                                                                                        
-
-			        putchar('\n');                                                                                                                  
-
-				        return (0);                                                                                                                     
-
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
+	putchar('\n');
+	return (0);
 }
