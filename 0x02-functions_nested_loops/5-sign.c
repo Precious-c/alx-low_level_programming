@@ -1,18 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 /**
- *main - main block
- * Description: Print all numbers of base 10, starting from 0.
- * Return: 0
+ * print_sign - prints the sign of a number
+ * @n: takes in an integer
+ * Return: 1 if n is > zero, 0 if n is zero, -1 if n is < zero
  */
-int main(void)
+int print_sign(int n)
 {
-	int i;
-
-	for (i = 0; i < 10; i++)
+	if (n > 0)
 	{
-		printf("%i", i);
+		_putchar('+');
+		return (1);
 	}
-	putchar('\n');
-
-	return (0);
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
